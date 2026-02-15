@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import founderImg from "@/assets/founder.jpg";
+import founderImg from "@/assets/custom2.jpeg";
 
 const About = () => {
   return (

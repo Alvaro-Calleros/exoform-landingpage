@@ -1,5 +1,5 @@
 import { Facebook, Instagram, MessageCircle } from "lucide-react";
-import { getWhatsAppLink, WHATSAPP_DISPLAY } from "@/lib/constants";
+import { getWhatsAppLink, WHATSAPP_DISPLAY, FACEBOOK_URL } from "@/lib/constants";
 
 const Footer = () => {
   return (
@@ -48,7 +48,13 @@ const Footer = () => {
               <span>México</span>
             </div>
             <div className="flex gap-4 mt-6">
-              <a href="#" aria-label="Facebook" className="text-primary-foreground/50 hover:text-primary-foreground transition-colors">
+              <a
+                href={FACEBOOK_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                className="text-primary-foreground/50 hover:text-primary-foreground transition-colors"
+              >
                 <Facebook size={20} />
               </a>
               <a href="#" aria-label="Instagram" className="text-primary-foreground/50 hover:text-primary-foreground transition-colors">

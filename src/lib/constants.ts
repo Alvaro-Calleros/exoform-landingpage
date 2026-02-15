@@ -7,3 +7,4 @@ export const getWhatsAppLink = (customMessage?: string) => {
 };
 
 export const WHATSAPP_DISPLAY = "669 154 7689";
+export const FACEBOOK_URL = "https://www.facebook.com/profile.php?id=61587638488516";

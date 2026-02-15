@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 import { getWhatsAppLink } from "@/lib/constants";
-import productGeneric from "@/assets/product-generic.jpg";
-import productCustom from "@/assets/product-custom.jpg";
+import productGeneric from "@/assets/custom1.jpeg";
+import productCustom from "@/assets/custom-pack.jpeg";
 
 const products = [
   {
@@ -61,11 +61,10 @@ const Products = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.15 }}
-              className={`rounded-2xl overflow-hidden border ${
-                product.featured
+              className={`rounded-2xl overflow-hidden border ${product.featured
                   ? "border-foreground/20 bg-primary text-primary-foreground"
                   : "border-border bg-background"
-              }`}
+                }`}
             >
               <div className="aspect-[3/4] overflow-hidden">
                 <img
@@ -92,11 +91,10 @@ const Products = () => {
                   href={getWhatsAppLink(product.message)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`inline-flex w-full items-center justify-center rounded-full py-3.5 text-sm font-semibold transition-colors ${
-                    product.featured
+                  className={`inline-flex w-full items-center justify-center rounded-full py-3.5 text-sm font-semibold transition-colors ${product.featured
                       ? "bg-whatsapp text-whatsapp-foreground hover:opacity-90"
                       : "bg-primary text-primary-foreground hover:opacity-90"
-                  }`}
+                    }`}
                 >
                   {product.cta}
                 </a>

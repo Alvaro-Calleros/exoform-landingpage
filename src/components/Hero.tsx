@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
 import { getWhatsAppLink } from "@/lib/constants";
-import heroBg from "@/assets/hero-bg.jpg";
+import heroBg from "@/assets/hero.jpg";
 
 const Hero = () => {
   return (

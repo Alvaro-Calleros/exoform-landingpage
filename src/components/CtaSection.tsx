@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { MessageCircle } from "lucide-react";
-import { getWhatsAppLink, WHATSAPP_DISPLAY } from "@/lib/constants";
+import { MessageCircle, Facebook } from "lucide-react";
+import { getWhatsAppLink, WHATSAPP_DISPLAY, FACEBOOK_URL } from "@/lib/constants";
 
 const CtaSection = () => {
   return (
@@ -17,15 +17,26 @@ const CtaSection = () => {
           <p className="text-primary-foreground/70 text-lg mb-10 max-w-md mx-auto">
             Contáctanos hoy para una consulta personalizada
           </p>
-          <a
-            href={getWhatsAppLink()}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 rounded-full bg-whatsapp text-whatsapp-foreground px-10 py-5 text-lg font-semibold hover:opacity-90 transition-opacity"
-          >
-            <MessageCircle size={24} />
-            WhatsApp: {WHATSAPP_DISPLAY}
-          </a>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a
+              href={getWhatsAppLink()}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex w-full sm:w-auto items-center justify-center gap-3 rounded-full bg-whatsapp text-whatsapp-foreground px-10 py-5 text-lg font-semibold hover:opacity-90 transition-opacity"
+            >
+              <MessageCircle size={24} />
+              WhatsApp: {WHATSAPP_DISPLAY}
+            </a>
+            <a
+              href={FACEBOOK_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex w-full sm:w-auto items-center justify-center gap-3 rounded-full bg-[#1877F2] text-white px-10 py-5 text-lg font-semibold hover:opacity-90 transition-opacity"
+            >
+              <Facebook size={24} />
+              Facebook
+            </a>
+          </div>
         </motion.div>
       </div>
     </section>
